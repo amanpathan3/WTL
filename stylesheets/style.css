@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scrollbar-width: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    -ms-overflow-style: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* NAVBAR */
+.navbar{
+    width:100%;
+    height:70px;
+    background:#111;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:orange;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:22px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.nav a:hover{
+    color:orange;
+}
+
+/* HERO */
+.heroSection{
+    height:200px;
+    overflow:hidden;
+}
+
+.heroSection img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* PRODUCTS */
+.carts-main{
+    padding:50px;
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.carts{
+    background:white;
+    width:280px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+    text-align:center;
+    padding:15px;
+    transition:.3s;
+}
+
+.carts:hover{
+    transform:translateY(-8px);
+}
+
+.carts img{
+    width:100%;
+    height:200px;
+    object-fit:contain;
+}
+
+.content h2{
+    margin:10px 0;
+}
+
+.content p{
+    color:green;
+    font-weight:bold;
+}
+
+.content button{
+    margin-top:12px;
+    padding:10px 22px;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.content button:hover{
+    background:orange;
+}
+
+/* FOOTER */
+.footer{
+    background:#111;
+    color:white;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    padding:50px;
+}
+
+.footerBox h2{
+    color:orange;
+    margin-bottom:12px;
+}
+
+.footerBox p{
+    font-size:14px;
+    opacity:.8;
+}
+
+.footerBox a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:6px 0;
+    font-size:14px;
+    opacity:.8;
+}
+
+.footerBox a:hover{
+    color:orange;
+    opacity:1;
+}
+
+.footerBox input{
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    border:none;
+    border-radius:4px;
+}
+
+.footerBox button{
+    margin-top:8px;
+    padding:10px;
+    width:100%;
+    background:orange;
+    border:none;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+.footerBottom{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
