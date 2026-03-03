@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 30px;
+        }
+
+        #fetchBtn {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            background-color: white;
+            color: #764ba2;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        #fetchBtn:hover {
+            background-color: #f1f1f1;
+            transform: scale(1.05);
+        }
+
+        #result {
+            width: 80%;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .completed {
+            border-left: 6px solid green;
+        }
+
+        .pending {
+            border-left: 6px solid red;
+        }
+
+        .status {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>AJAX Assignment</h1>
+    <button id="fetchBtn">Fetch Data</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
